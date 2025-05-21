@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+.container {
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+table th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+}
+.status.pending {
+    background-color: #ffcc00;
+    color: white;
+}
+.status.in_progress {
+    background-color: #17a2b8;
+    color: white;
+}
+.status.delivered {
+    background-color: #28a745;
+    color: white;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #007bff;
+    color: white;
+}
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 10px;
+}
+
+header nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+header nav button:hover {
+    background-color: #0056b3;
+}
+/* Основной стиль кнопок */
+button,
+.btn {
+    display: inline-block; /* Кнопка будет занимать только нужное место */
+    padding: 12px 24px; /* Внутренний отступ для красивого размера */
+    font-size: 16px; /* Удобный по чтению размер текста */
+    font-weight: 600; /* Немного утолщенный текст */
+    color: white; /* Цвет текста */
+    background-color: #4CAF50; /* Основной цвет кнопки (зеленый) */
+    border: none; /* Убираем границу */
+    border-radius: 8px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: all 0.3s ease; /* Плавный переход эффектов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тонкая тень для глубины */
+}
+
+/* Эффект при наведении */
+button:hover,
+.btn:hover {
+    background-color: #013480; /* Темнее оригинального цвета */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Увеличиваем тень */
+    transform: translateY(-2px); /* Легкий "подъем" кнопки */
+}
+
+/* Эффект при нажатии */
+button:active,
+.btn:active {
+    background-color: #001674; /* Еще темнее для подчеркнутости */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); /* Уменьшаем тень */
+    transform: translateY(1px); /* Легкое смещение вниз */
+}
