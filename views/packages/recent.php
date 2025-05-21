@@ -12,9 +12,7 @@
     <thead>
     <tr>
         <th>ID</th>
-        <th>Size</th>
-        <th>Waga</th>
-        <th>Opis</th>
+        <th>uwagi</th>
         <th>Data dostawy</th>
     </tr>
     </thead>
@@ -22,10 +20,8 @@
     <?php foreach ($recentPackages as $package): ?>
         <tr>
             <td><?= $package['paczka_id'] ?></td>
-            <td><?= $package['wymiary'] ?></td>
-            <td><?= $package['waga'] ?> кг</td>
-            <td><?= $package['opis'] ?></td>
-            <td><?= $package['data_dostawy'] ?></td>
+            <td><?= $package['uwagi'] ?></td>
+            <td><?= $package['czas_dostawy'] ?></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
